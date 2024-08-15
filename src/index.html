@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Pet Feeder</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Automatic Pet Feeder</h1>
+    <div class="circle"></div>
+    <button class="btn" onclick="feedNow()">Feed Now</button>
+    <div class="schedule">
+        <label for="time1">Feeding Schedule</label>
+        <input type="time" id="time1" value="04:30">
+        <input type="time" id="time2" value="19:30">
+        <button class="btn-schedule" onclick="setSchedule()">Set Schedule</button>
+    </div>
+</div>
+
+<script>
+    function feedNow() {
+        alert("Feeding your pet now!");
+        // Add your code here to trigger the feeding mechanism
+    }
+
+    function setSchedule() {
+        const time1 = document.getElementById('time1').value;
+        const time2 = document.getElementById('time2').value;
+        alert(`Feeding times set to ${time1} and ${time2}`);
+        // Add your code here to schedule the feeding times
+    }
+</script>
+
+</body>
+</html>
